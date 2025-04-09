@@ -1,3 +1,7 @@
+# https://github.com/lukasuf/lab10-LZ-JR/
+# Partner 1: Lukas Zhukauskas
+# Partner 2: Jose Resendiz
+
 import unittest
 from calculator import *
 
