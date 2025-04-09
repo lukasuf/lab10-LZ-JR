@@ -5,9 +5,11 @@
 import math
 
 def square_root(a):
-    if a < 0:
-        raise ValueError
-    return math.sqrt(a)
+    try:
+        return math.sqrt(a)
+    except:
+        if a < 0:
+            raise ValueError
 
 def hypotenuse(a,b):
     return math.hypot(a, b)
@@ -29,5 +31,7 @@ def div(a,b):
 def exp(a,b):
     return a**b
 
-def logarithm(a,b):
+def logarithm(a, b):
+    if a <= 0 or b < 0:
+        raise ValueError
     return math.log(b, a)
