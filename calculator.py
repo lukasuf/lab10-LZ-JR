@@ -19,10 +19,9 @@ def div(a,b):
     else:
         return a/b
 def log(a,b):
-    if a==1 or a<=0 or b<=0:
+    if a<=0 or b<=0:
         raise ValueError("Incorrect input for log")
     else:
         return math.log(b,a)
 def exp(a,b):
     return a**b
-
